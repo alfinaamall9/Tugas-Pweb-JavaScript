@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM</title>
+</head>
+<body>
+    <SCRIPT language="JavaScript">
+        function sim(){
+            var nama = (document.fform.inama.value);
+            var tempat = (document.fform.itempat.value);
+            var tanggallahir = (document.fform.itanggallahir.value);
+            var goldar = (document.fform.igoldar.value);
+            var jeniskelamin = (document.fform.ijeniskelamin.value);
+            var alamat = (document.fform.ialamat.value);
+            var status = (document.fform.istatus.value);
+            var provinsi = (document.fform.iprovinsi.value);
+
+            document.fform.onama.value=nama;
+            document.fform.otempat.value=tempat;
+            document.fform.otanggallahir.value=tanggallahir;
+            document.fform.ogoldar.value=goldar;
+            document.fform.ojeniskelamin.value=jeniskelamin;
+            document.fform.oalamat.value=alamat;
+            document.fform.ostatus.value=status;
+            document.fform.oprovinsi.value=provinsi;
+        }
+    </SCRIPT>
+    <FORM NAME ="fform">
+        <table border="1" align="center"width="70%">
+            <td width="100%" colspan="2">
+                <h2 align="center">INDONESIA</h2>
+                <h4 align="center">SURAT IZIN MENGEMUDI</h4>
+            </td>
+            <tr>
+                <td width="25%"><PRE>
+                <img src="nana.jpg" width= 65%>
+                </PRE>
+            <td width="50%"><pre>
+            Masukkan Data Anda :
+            Nama : <input type="text" size="20" name="inama">
+            Tempat Lahir : <input type="text" size="20" name="itempat">
+            Tanggal Lahir : <input type="text" size="20" name="itanggallahir">
+            Golongan Darah : <input type="text" size="20" name="igoldar">
+            Jenis Kelamin : 
+            <input type="radio" name="ijeniskelamin" value="Laki-laki">Laki-laki
+            <input type="radio" name="ijeniskelamin" value="Perempuan">Perempuan<br>
+            Alamat : <input type="text" size="20" name="ialamat">
+            Status : <input type="text" size="20" name="istatus">
+            Provinsi : <input type="text" size="20" name="iprovinsi"></pre>
+            </table>
+            <table border="0" align="center"width="70%">
+                <tr>
+                <td><INPUT TYPE="button" value="Cetak" onclick="sim()">
+                <INPUT TYPE="reset" value="Ulang">
+                </td>
+                
+                </tr>
+            </table>
+            <table border="0" align="center"width="70%">
+                <td width="100%" colspan="2">
+                    <h2 align="center">INDONESIA</h2>
+                    <h4 align="center">SURAT IZIN MENGEMUDI</h4>
+                </td>
+                <tr>
+                    <td width="25%"><PRE>
+                    <img src="nana.jpg" width="65%">
+                    </PRE>
+                <td width="50%"><pre>
+                1. <input type="text" size="20" name="onama">
+                2. <input type="text" size="20" name="otempat">,<input type="text" size="20" name="otanggallahir">
+                3. <input type="text" size="20" name="ogoldar">-<input type="text" name="ojeniskelamin" size="20">
+                4. <input type="text" size="20" name="oalamat">
+                5. <input type="text" size="20" name="ostatus">
+                6. <input type="text" size="20" name="oprovinsi"></pre>
+                    </table>
+</body>
+</html>
